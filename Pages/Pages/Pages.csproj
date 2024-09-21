@@ -63,18 +63,23 @@
 	</ItemGroup>
 
 	<ItemGroup>
-	  <Compile Update="FlyoutPage.xaml.cs">
-	    <DependentUpon>FlyoutPage.xaml</DependentUpon>
-	  </Compile>
-	</ItemGroup>
-
-	<ItemGroup>
 	  <MauiXaml Update="ContentPageDemo.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
-	  <MauiXaml Update="FlyoutPage.xaml">
+	  <MauiXaml Update="FlyoutPageDemo.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
+	  <MauiXaml Update="TabbedPageDemo.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	</ItemGroup>
+
+	<ItemGroup>
+	  <EditorConfigFiles Remove="D:\Works\.net maui\.net-maui-\Pages\Pages\.editorconfig" />
+	</ItemGroup>
+
+	<ItemGroup>
+	  <None Include="D:\Works\.net maui\.net-maui-\Pages\Pages\.editorconfig" />
 	</ItemGroup>
 
 </Project>

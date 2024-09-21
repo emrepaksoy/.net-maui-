@@ -11,7 +11,7 @@
             navPage.Background = Colors.Blue;
             navPage.BarTextColor = Colors.OrangeRed;
 
-            MainPage = new FlyoutPage1();
+            MainPage = new TabbedPageDemo();
         }
     }
 }
