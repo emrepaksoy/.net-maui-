@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<TabbedPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Layouts.TabbedPageView"
+             Title="TabbedPageView">
+
+    <ContentPage Title="StackLayout"
+                 Padding="0,20,0,0"
+                 xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+                  xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml">
+        <StackLayout>
+            <StackLayout Orientation="Horizontal">
+                <Label Text="Name:" />
+                <Entry Placeholder="Enter your name" />
+            </StackLayout>
+            <StackLayout Orientation="Horizontal">
+                <Label Text="Age:" />
+                <Entry Placeholder="Enter your age" />
+            </StackLayout>
+            <StackLayout Orientation="Horizontal">
+                <Label Text="Occupation:" />
+                <Entry Placeholder="Enter your occupation" />
+            </StackLayout>
+            <StackLayout Orientation="Horizontal">
+                <Label Text="Address:" />
+                <Entry Placeholder="Enter your address" />
+            </StackLayout>
+        </StackLayout>
+
+    </ContentPage>
+
+    <ContentPage
+             xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AbsoluteLayoutDemos.Views.XAML.StylishHeaderDemoPage"
+             Title="Stylish header demo">
+        <AbsoluteLayout Margin="20">
+            <BoxView Color="Silver"
+                 AbsoluteLayout.LayoutBounds="0, 10, 200, 5" />
+            <BoxView Color="Silver"
+                 AbsoluteLayout.LayoutBounds="0, 20, 200, 5" />
+            <BoxView Color="Silver"
+                 AbsoluteLayout.LayoutBounds="10, 0, 5, 65" />
+            <BoxView Color="Silver"
+                 AbsoluteLayout.LayoutBounds="20, 0, 5, 65" />
+            <Label Text="Stylish Header"
+               FontSize="24"
+               AbsoluteLayout.LayoutBounds="30, 25" />
+        </AbsoluteLayout>
+    </ContentPage>
+
+    <ContentPage Title="AbsoluteLayout">
+        <HorizontalStackLayout Margin="20">
+            <Rectangle Fill="Red"
+              HeightRequest="30"
+              WidthRequest="30" />
+            <Label Text="Red"
+          FontSize="18" />
+        </HorizontalStackLayout>
+    </ContentPage>
+
+    <ContentPage Title="AbsoluteLayout">
+        <VerticalStackLayout Margin="20,35,20,25">
+            <Label Text="The VericalStackLayout has its Margin property set, to control the rendering position of the VerticalStackLayout." />
+            <Label Text="The Padding property can be set to specify the distance between the VerticalStackLayout and its children." />
+            <Label Text="The Spacing property can be set to specify the distance between views in the VerticalStackLayout." />
+        </VerticalStackLayout>
+    </ContentPage>
+
+    <ContentPage Title="Grid">
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="50" />
+                <RowDefinition Height="50" />
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="Auto" />
+                <ColumnDefinition />
+            </Grid.ColumnDefinitions>
+            <Label Text="Column 0, Row 0"
+           WidthRequest="200" />
+            <Label Grid.Column="1"
+           Text="Column 1, Row 0" />
+            <Label Grid.Row="1"
+           Text="Column 0, Row 1" />
+            <Label Grid.Column="1"
+           Grid.Row="1"
+           Text="Column 1, Row 1" />
+        </Grid>
+    </ContentPage>
+
+    <ContentPage Title="FlexLayout">
+
+        <FlexLayout Direction="Column"
+            AlignItems="Center"
+            JustifyContent="SpaceEvenly">
+            <Label Text="FlexLayout in Action" />
+            <Button Text="Button" />
+            <Label Text="Another Label" />
+        </FlexLayout>
+    </ContentPage>
+    
+</TabbedPage>
